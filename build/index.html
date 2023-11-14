@@ -7,12 +7,38 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="min-h-screen dark:bg-black dark:text-white">
-    <header class="bg-[#FFEED8] text-white sticky top-0">
-      <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
-        <h1 class="text-3xl font-medium text-slate-950 flex items-center gap-1">
-          <span><img src="./images/logo_light.svg" alt="" /></span>Learnly
+    <header class="bg-[#BDECE3] text-white sticky top-0">
+      <section class="max-w-5xl mx-auto p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-medium text-slate-950">
+          <a href="" class="flex items-center gap-1"
+            ><span><img src="./images/logo_light.svg" alt="" /></span>Learnly</a
+          >
         </h1>
+        <div>
+          <button
+            id="mobile-open"
+            class="text-3xl sm:hidden focus:outline-none text-slate-950"
+          >&#9776</button>
+          <nav class="hidden sm:block space-x-8 text-lg font-normal text-slate-900" aria-label="main">
+            <a href="" class="hover:opacity-90 font-medium text-slate-700">Home</a>
+            <a href="" class="hover:opacity-90 font-medium text-slate-700">Get Premium</a>
+            <a href="" class="hover:opacity-90  font-medium text-slate-700">🚀 Book a 1:1 tutor</a>
+          </nav>
+        </div>
       </section>
     </header>
+    <main class="w-full bg-[#BDECE3] py-4">
+        <div class="max-w-5xl mx-auto"><section id="hero" class="flex flex-col-reverse md:flex-row justify-center  items-center gap-8 p-6 mb-12">
+            <atricle class="sm:w-1/2 pt-5">
+                <h2 class="max-w-md text-[2.5rem] font-bold text-left text-slate-900 dark:text-slate-50 leading-tight mb-5">Get a 1:1 tutoring that caters to your individual strengths and specific areas for improvement </h2>
+                <p class="text-2xl md:text-xl text-slate-600 my-3">Our mission is to inspire confidence, ignite curiosity, and guide students towards their full academic potential</p>
+                 <button class=" bg-slate-800 px-10 py-4 md:py-3 text-slate-50 rounded-sm mt-5 w-full md:w-fit ">🚀  Book a 1:1 tutor</button>
+            </atricle>
+            <atricle class="sm:w-1/2">
+               <img src="./images/hero.svg" alt="" class="md:w-[650px] md:h-[550px]">
+            </atricle>
+        </section></div>
+        
+    </main>
   </body>
 </html>
