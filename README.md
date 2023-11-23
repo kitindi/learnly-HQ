@@ -10,3 +10,6 @@ For long time now, parents and students have been going through difficult time t
 ![Learnly HQ ](/build/images/learnlyuiux.png)
 
 ### project Features
+
+- Student or a parent will be able to book a tutor almost instantly
+- Each tutor is connected to the [Calendly](https://calendly.com/) appointment booking application
