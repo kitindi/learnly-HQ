@@ -12,3 +12,9 @@ const initApp = () => {
 };
 
 document.addEventListener("DOMContentLoaded", initApp);
+
+// calculate the current year
+
+let tarehe = new Date().getFullYear();
+let wekatarehe = document.getElementById("tarehe");
+wekatarehe.innerText = tarehe;
