@@ -9,7 +9,9 @@ For long time now, parents and students have been going through difficult time t
 
 ![Learnly HQ ](/build/images/learnlyuiux.png)
 
-### project Features
+- See the project UI designs in [Figma](https://www.figma.com/file/GwYE7ljPa2m3THhIx5OY0n/Learnly-HQ?type=design&node-id=0%3A1&mode=design&t=tqqm2IeYRbEQtBzL-1)
+
+### Project Features
 
 - Student or a parent will be able to book a tutor almost instantly
 - Each tutor is connected to the [Calendly](https://calendly.com/) appointment booking application
