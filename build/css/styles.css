@@ -1180,6 +1180,11 @@ video {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
+
+  .dark\:text-slate-900{
+    --tw-text-opacity: 1;
+    color: rgb(15 23 42 / var(--tw-text-opacity));
+  }
 }
 
 @media (min-width: 640px){
@@ -1218,6 +1223,10 @@ video {
 
   .sm\:max-w-4xl{
     max-width: 56rem;
+  }
+
+  .sm\:max-w-6xl{
+    max-width: 72rem;
   }
 
   .sm\:flex-row{
