@@ -6,55 +6,73 @@
     <title>Learnly</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="./js/main.js" defer></script>
   </head>
   <body class="min-h-screen dark:bg-black dark:text-white">
     <header class="bg-[#BDECE3] text-white sticky top-0 ">
       <section class="max-w-6xl mx-auto py-4 flex justify-between items-center px-8">
         <h1 class="text-2xl font-semibold text-slate-950">
           <a href="" class="flex items-center gap-1 "
-            ><span class="font-semibold"><img src="./images/logo_light.svg" alt="" class="w-full"/></span>Learnify HQ</a
+            ><span class="font-semibold"><img src="./images/logo_light.svg" alt="" class="w-full"/></span>Learnily HQ</a
           >
         </h1>
         <div>
           <button
-            id="mobile-open"
-            class="text-3xl sm:hidden focus:outline-none text-slate-950"
+            id="humburger-btn"
+            class="text-3xl sm:hidden text-slate-950 cursor-pointer"
           >&#9776</button>
           <nav class="hidden sm:block space-x-8 text-lg font-normal text-slate-900" aria-label="main">
             <a href="" class="hover:opacity-90 font-medium text-slate-700">Home</a>
             <a href="#package" class="hover:opacity-90 font-medium text-slate-700">Get Premium</a>
+            <a href="#faq" class="hover:opacity-90 font-medium text-slate-700  text-center py-6">FAQ</a>
             <a href="#book" class="hover:opacity-90  font-medium text-slate-700 ">🚀 Book a 1:1 tutor</a>
           </nav>
         </div>
       </section>
+      <section class="absolute top-0 left-0 bg-[#BDECE3] w-full flex-col hidden" id="mobile-menu">
+        <div class="flex justify-between items-center px-4 py-2">
+          <h1 class="text-2xl font-semibold text-slate-950">
+          <a href="" class="flex items-center gap-1 "
+            ><span class="font-semibold"><img src="./images/logo_light.svg" alt="" class="w-full"/></span>Learnily HQ</a
+          >
+        </h1>
+        <span class="text-6xl text-slate-800  cursor-pointer p-2">&times;</span>
+      </div>
+        <nav class="bg-[#BDECE3] min-h-screen px-4 flex flex-col py-32" aria-label="mobile">
+          <a href="#home" class="hover:opacity-90 font-medium text-slate-700 text-3xl text-center py-6">Home</a>
+          <a href="#package" class="hover:opacity-90 font-medium text-slate-700  text-3xl text-center py-6">Get Premium</a>
+          <a href="#faq" class="hover:opacity-90 font-medium text-slate-700  text-3xl text-center py-6">FAQ</a>
+          <a href="#book" class="hover:opacity-90  font-medium text-slate-700  text-3xl text-center py-6">🚀 Book a 1:1 tutor</a>
+        </nav>
+      </section>
     </header>
-    <div class="w-full bg-[#BDECE3] py-10">
+    <div class="w-full bg-[#BDECE3] py-10 widescreen:section-min-height">
         <div class="max-w-6xl mx-auto px-4 "><section id="hero" class="flex flex-col-reverse md:flex-row justify-center  items-center gap-8 py-6 mb-12 px-6">
             <atricle class="flex-1">
                 <h2 class=" text-3xl sm:text-5xl font-bold text-left text-slate-900 dark:text-slate-50 leading-tight sm:leading-loose mb-5">Get a 1:1 tutoring that caters to your individual strenghts </h2>
                 <p class="text-xl sm:text-2xl md:text-xl text-slate-600 my-10">Our mission is to inspire confidence, ignite curiosity, and guide students towards their full academic potential</p>
                  <a href="#book" class=" bg-slate-900 px-16 py-4 text-slate-50 rounded-sm mt-5 w-full sm:max-w-4xl ">🚀  Book a 1:1 tutor</a>
             </atricle>
-            <atricle class="flex-1 md:pl-20">
-               <img src="./images/hero.svg" alt="" class="w-full object-cover sm:w-96">
+            <atricle class="flex-1 sm:pl-20">
+               <img src="./images/hero.svg" alt="" class="w-full object-cover ">
             </atricle>
         </section></div>
                
       </div>
       <div class="w-full py-8 " id="backg">
         <div class="max-w-6xl mx-auto px-4">
-          <section class="py-16 md:py-28  px-8">
-            <h1 class=" text-3xl sm:text-5xl font-bold text-left text-slate-900 dark:text-slate-50 leading-tight mb-10">We are not just  a tutoring service,
+          <section class="py-10 sm:py-16  px-8">
+            <h1 class=" text-3xl sm:text-5xl font-bold text-left text-slate-900 dark:text-slate-50 leading-tight mb-8">We are not just  a tutoring service,
               We are partners in your educational journey.</h1>
               <div class="flex flex-col gap-6 md:grid md:rid-cols-4 md:grid-rows-4 mt-10 md:gap-8 py-16 ">
                 <div class="col-span-2 row-span-2 p-4 flex gap-4 border border-gray-300 rounded-lg flex-wrap md:flex-nowrap">
-                 <div> <div class="h-10 w-10 md:h-12 md:w-12 rounded-full bg-slate-900 text-white text-lg font-bold flex justify-center items-center"> 1</div></div>
-                  <div> <h2 class="text-xl sm:text-2xl font-bold text-slate-700 mb-4">Get Expert Tutors</h2><p class="text-lg text-slate-600">Our team comprises highly qualified and experienced tutors .They are not just educators; they are mentors dedicated to fostering a deep understanding of the curriculum</p></div>
+                 <div> <div class="h-8 w-8 md:h-12 md:w-12 rounded-full bg-slate-900 text-white text-lg font-bold flex justify-center items-center"> 1</div></div>
+                  <div> <h2 class="text-lg sm:text-xl font-bold text-slate-700 mb-4">Get Expert Tutors</h2><p class="text-base text-slate-600">Our team comprises highly qualified and experienced tutors .They are not just educators; they are mentors dedicated to fostering a deep understanding of the curriculum</p></div>
                 </div>
-                <div class="col-start-3 col-end-5 row-start-2 row-end-4 p-4 flex gap-4 border border-gray-300 rounded-lg flex-wrap md:flex-nowrap"><div><div class="h-10 w-10  md:w-12 md:h-12 rounded-full bg-slate-900 text-white text-lg font-bold flex justify-center items-center"> 2</div></div>
-                <div><h2 class="text-xl sm:text-2xl font-bold text-slate-700 mb-4">Get Tailored Learning Plans</h2><p class="text-lg text-slate-600">We recognize that each student is unique. Our tutors design personalized learning plans that ensuring a customized educational journey.</p></div></div>
-                <div class=" col-span-2 row-start-3 row-end-5 p-4 flex gap-4 border border-gray-300 rounded-lg flex-wrap md:flex-nowrap"><div><div class="h-10 w-10 md:h-12 md:w-12 rounded-full bg-slate-900 text-white text-lg font-bold flex justify-center items-center"> 3</div></div>
-                <div><h2 class="text-xl sm:text-2xl font-bold text-slate-600 mb-4">Get Holistic Approach</h2><p class="text-lg text-slate-600">Our tutors instill critical thinking skills, time management, and effective study techniques, equipping students with tools for lifelong success.</p></div></div>
+                <div class="col-start-3 col-end-5 row-start-2 row-end-4 p-4 flex gap-4 border border-gray-300 rounded-lg flex-wrap md:flex-nowrap"><div><div class="h-8 w-8  md:w-12 md:h-12 rounded-full bg-slate-900 text-white text-lg font-bold flex justify-center items-center"> 2</div></div>
+                <div><h2 class="text-lg sm:text-xl font-bold text-slate-700 mb-4">Get Tailored Learning Plans</h2><p class="text-base text-slate-600">We recognize that each student is unique. Our tutors design personalized learning plans that ensuring a customized educational journey.</p></div></div>
+                <div class=" col-span-2 row-start-3 row-end-5 p-4 flex gap-4 border border-gray-300 rounded-lg flex-wrap md:flex-nowrap"><div><div class="h-8 w-8 md:h-12 md:w-12 rounded-full bg-slate-900 text-white text-lg font-bold flex justify-center items-center"> 3</div></div>
+                <div><h2 class="text-lg sm:text-xl font-bold text-slate-600 mb-4">Get Holistic Approach</h2><p class="text-base text-slate-600">Our tutors instill critical thinking skills, time management, and effective study techniques, equipping students with tools for lifelong success.</p></div></div>
               </div>
           </section>
         </div>
@@ -147,7 +165,7 @@
       <section id="package" class="py-16 sm:py">
         <div class="max-w-6xl mx-auto px-6">
           <h1 class="text-3xl text-center sm:text-5xl font-bold py-8 mb-4">Accelerate your learning with our premium packages </h1>
-          <p class="text-lg sm:text-3xl text-center mb-10 text-slate-800 font-medium">Choose the best plan for you</p>
+          <p class="text-lg sm:text-2xl text-center mb-10 text-slate-800 font-medium">Choose the best plan for you</p>
           <div class="flex flex-col-reverse sm:flex-row gap-5 max-w-3xl mx-auto px-6 sm:px-0 items-center py-16">
             <div class="border-2 border-gray-200  py-4 px-8 rounded-lg h-fit"> 
               <h3 class="text-lg text-slate-800 mb-2 font-semibold">EXAM BOOST</h3>
@@ -164,7 +182,7 @@
                   techniques</li>
                 
               </ul>
-               <button class="border font-medium border-gray-900 hover:bg-gray-800 hover:text-white rounded-lg px-8 py-2 w-full mt-4">Choose Package</button>
+               <button class="border font-medium border-gray-900 hover:bg-gray-800 hover:text-white rounded-sm px-8 py-2 w-full mt-4">Choose Package</button>
               </div>
             <div>
               <div class="border-2 border-gray-200 rounded-lg pb-4"> 
@@ -186,7 +204,7 @@
                   <li class="flex gap-3 items-center "><span><img src="./images/check.svg" alt="" class="h-6 w-6"></span><p class="text-sm sm:text-lg font-normal text-slate-700">5 hours per week</p> </li>
                   
                 </ul>
-                <button class="border bg-gray-900 hover:bg-gray-800 text-white font-medium rounded-lg px-8 py-2 w-full mt-4">Choose Package</button>
+                <button class="border bg-gray-900 hover:bg-gray-800 text-white font-medium rounded-sm px-8 py-2 w-full mt-4">Choose Package</button>
                 </div>
                 
                  
@@ -196,21 +214,51 @@
         </div>
 
       </section>
-      <section id="faq">
-        <div class="max-w-6xl mx-auto px-6 py-8">
+      <section id="faq" class="py-12">
+        <div class="max-w-4xl mx-auto px-6 py-8">
           <h1 class="text-3xl text-center sm:text-5xl font-bold py-8 mb-4">Frequently asked questions</h1>
           <hr class="max-w-64 bg-black mb-6" >
           <div class="flex flex-col gap-6">
             <div x-data="{ open: false }">
-            <p class="flex justify-between items-center text-lg sm:text-xl font-medium mb-4" >How do I purchase a Premium subscription ? <span @click="open = !open"><img src="./images/caretdown.svg" alt="" x-show="!open"> <img src="./images/caretup.svg" alt="" x-show="open"></span></p>
-            <p x-show="open">You can either purchase your subscription here in your account, or, if they create a parent account, they can purchase there and transfer the subscription to you in two clicks. They'll also be able to see and support your progres</p>
+            <p class="flex justify-between items-center text-lg sm:text-2xl font-medium mb-5" >How do I purchase a Premium subscription ? <span @click="open = !open"><img src="./images/caretdown.svg" alt="" x-show="!open"> <img src="./images/caretup.svg" alt="" x-show="open"></span></p>
+            <p x-show="open" class="text-lg">You can either purchase your subscription here once you create an account, or via M-Pesa payment number.</p>
           </div>
+          <hr class="max-w-64 bg-black mb-6" >
             <div x-data="{ open: false }">
-            <p class="flex justify-between items-center text-lg sm:text-xl font-medium" >How does premium subscription actually work? <span @click="open = !open"><img src="./images/caretdown.svg" alt="" x-show="!open"> <img src="./images/caretup.svg" alt="" x-show="open"></span></p>
-            <p x-show="open">You can either purchase your subscription here in your account, or, if they create a parent account, they can purchase there and transfer the subscription to you in two clicks. They'll also be able to see and support your progres</p>
+            <p class="flex justify-between items-center text-lg sm:text-2xl font-medium mb-5" >How does premium subscription actually work? <span @click="open = !open"><img src="./images/caretdown.svg" alt="" x-show="!open"> <img src="./images/caretup.svg" alt="" x-show="open"></span></p>
+            <p x-show="open" class="text-lg">With premium subscription, you can pay in two installments in a month, you wil have the flexibility to switch teachers where necessary. You will get one month free if you pay for 12 months</p>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:justify-between items-center py-8">
+            <p class="text-lg ">If you have any other questions, please contact us and we'll get back to you shortly.</p> <a href="mailto:support@learlyhq.co.tz" class="text-center mt-5 sm:mt-0 bg-gray-900 hover:bg-gray-800 text-white font-medium rounded-sm px-8 py-3 w-full sm:w-fit text-lg">Get in touch</a>
           </div>
         </div>
         </div>
-      </section>       
+      </section> 
+      <section id="footer" class="pt-4 bg-[#C9F8EF]">
+        <div class="max-w-6xl mx-auto py-16 px-6">
+          <div class="flex flex-col  sm:flex-row gap-14 sm:justify-between sm:items-center">
+            <div>
+              <h1 class="text-2xl font-semibold text-slate-950">
+                <a href="" class="flex items-center gap-1 "
+                  ><span class="font-semibold text-2xl sm:3xl"><img src="./images/logo_light.svg" alt="" class="w-full"/></span>Learnily HQ</a
+                >
+              </h1>
+              <p class="text-slate-700 mt-2">Let's embark on this learning 
+                adventure together</p>
+            </div>
+            <div>
+              <h3 class="text-xl sm:text-2xl font-medium">Follow us</h3>
+              <ul class=" flex gap-5 mt-4">
+                <li><a href=""><img src="./images/facebook-logo-bold.svg" alt="" class="h-6 w-6"></a></li>
+                <li><a href=""><img src="./images/instagram-logo-bold.svg" alt="" class="h-6 w-6"></a></li>
+                <li><a href=""><img src="./images/twitter-logo.svg" alt="" class="h-6 w-6"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-6xl mx-auto pt-6 pb-1 px-6">
+        <p class="font-medium text-sm">Copyright © Learnily HQ <span x-text="new Date().getFullYear()"></span></p>  
+        </div>
+      </section>      
   </body>
 </html>
